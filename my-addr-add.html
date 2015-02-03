@@ -1,0 +1,87 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="apple-mobile-web-app-title" content="">
+    <meta content="yes" name="apple-mobile-web-app-capable">
+    <meta content="yes" name="apple-touch-fullscreen">
+    <meta content="telephone=yes" name="format-detection">
+    <meta content="white" name="apple-mobile-web-app-status-bar-style">
+    <meta name="apple-itunes-app" content="">
+    <meta name="revisit-after" content="1 days">
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <meta name="copyright" content="">
+    
+    <meta name="viewport" content="width=320,maximum-scale=1.3,user-scalable=no,minimal-ui">
+    <title>添加收货地址</title>
+    
+    <script type="text/javascript" src="js/jquery-2.1.1.js"></script>
+	<script type="text/javascript" src="js/jquery.mobile-1.4.4.js"></script>
+    <script type="text/javascript" src="js/jquery.grid-a-licious.min.js"></script>
+    <script type="text/javascript" src="js/app.init.js"></script>
+
+	<link href="css/jquery.mobile-1.4.4.css" rel="stylesheet" type="text/css">
+	<link href="css/over.write.css" rel="stylesheet" type="text/css">
+	<link href="css/main.css" rel="stylesheet" type="text/css">
+	<link href="css/svg.icon.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+
+<div data-role="page" class="gray-bg" id="pro-info-detail-chose-page">
+
+	<!--header-->
+	<div data-role="header">
+    	<div class="nav-bar">
+        	<ul class="navbar-content">
+            	<h1>添加收货地址</h1>
+                <li class="left-first"><a href="#" data-role="none" class="navbar-btn navbar-btn-back" data-rel="back">返回</a></li>
+            </ul>
+        </div>
+    </div>
+    <!--/header-->
+    
+    <!--content-->
+    <div role="main">
+    	<!--addr form-->
+    	<ul class="white-pannel list-style margin-top-10px">
+        	<li>
+            	<span class="title-gray">收货人</span>
+                <span class="content"><input data-role="none" type="text" name="name" placeholder="真实姓名"></span>
+            </li>
+            <li>
+            	<span class="title-gray">联系方式</span>
+                <span class="content"><input data-role="none" type="tel" name="mobile" placeholder="手机号"></span>
+            </li>
+            <li>
+            	<span class="title-gray">省份</span>
+                <span class="content"><input data-role="none" type="text" name="province" placeholder="所在省份"></span>
+            </li>
+            <li>
+            	<span class="title-gray">市</span>
+                <span class="content"><input data-role="none" type="text" name="city" placeholder="市"></span>
+            </li>
+            <li>
+            	<span class="title-gray">区/县</span>
+                <span class="content"><input data-role="none" type="text" name="province" placeholder="区/县"></span>
+            </li>
+            <li>
+            	<span class="title-gray">街道</span>
+                <span class="content"><input data-role="none" type="text" name="province" placeholder="详细地址"></span>
+            </li>
+        </ul>
+        <!--/addr form-->
+        
+        <div class="paading-10px-container"><input type="submit" data-role="none" class="btn-normal disabled" value="确认添加"></div>
+        
+    </div>
+    <!--/content-->
+    
+    
+    
+</div>
+
+</body>
+</html>

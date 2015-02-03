@@ -1,0 +1,67 @@
+@charset "utf-8";
+.ui-page-theme-a .ui-btn{
+	color: #606060;
+	font-weight: normal;
+	text-shadow: none;
+	font-size:1.142rem;
+	line-height: 42px;
+}
+.chose-ctrl .ui-btn{
+	border:solid 1px #ccc;
+	color: #606060;
+	font-weight: normal;
+	text-shadow: none;
+	padding:0 10px;
+	line-height: 28px;
+}
+.page {
+	background-color: #fff;
+}
+.ui-page-theme-a .ui-btn{
+	color:#454545;
+}
+.ui-page-theme-a .ui-radio-on{
+	color:#282828;
+}
+.ui-btn {
+	padding: 0;
+	cursor: pointer;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+	box-shadow: none;
+}
+.ui-shadow-inset {
+	box-shadow: none;
+}
+.ui-input-text input {
+	text-shadow: none;
+}
+.search-box .ui-input-text input {
+	padding: 10px 0 0 24px;
+}
+.setting-item .ui-btn {
+	margin-top: -35px;
+	text-indent: -9999px;
+	z-index: 5000;
+}
+.form-table .ui-shadow-inset {
+	box-shadow: none;
+	-webkit-box-shadow: none;
+}
+.form-table .ui-body-inherit {
+	text-shadow: none;
+}
+.ui-footer-fixed {
+	bottom: 0;
+	padding: 0;
+	border: none;
+	background-color: none;
+}
+.ui-footer {
+	max-height: 50px;
+	padding: 0;
+	margin: 0;
+	border: none;
+}

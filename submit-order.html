@@ -1,0 +1,163 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="apple-mobile-web-app-title" content="">
+    <meta content="yes" name="apple-mobile-web-app-capable">
+    <meta content="yes" name="apple-touch-fullscreen">
+    <meta content="telephone=yes" name="format-detection">
+    <meta content="white" name="apple-mobile-web-app-status-bar-style">
+    <meta name="apple-itunes-app" content="">
+    <meta name="revisit-after" content="1 days">
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <meta name="copyright" content="">
+    
+    <meta name="viewport" content="width=320,maximum-scale=1.3,user-scalable=no,minimal-ui">
+    <title>确认订单</title>
+    
+    <script type="text/javascript" src="js/jquery-2.1.1.js"></script>
+	<script type="text/javascript" src="js/jquery.mobile-1.4.4.js"></script>
+    <script type="text/javascript" src="js/jquery.grid-a-licious.min.js"></script>
+    <script type="text/javascript" src="js/app.init.js"></script>
+
+	<link href="css/jquery.mobile-1.4.4.css" rel="stylesheet" type="text/css">
+	<link href="css/over.write.css" rel="stylesheet" type="text/css">
+	<link href="css/main.css" rel="stylesheet" type="text/css">
+	<link href="css/svg.icon.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+
+<div data-role="page" class="gray-bg" id="pro-info-detail-chose-page">
+
+	<!--header-->
+	<div data-role="header">
+    	<div class="nav-bar">
+        	<ul class="navbar-content">
+            	<h1>确认订单</h1>
+                <li class="left-first"><a href="#" data-role="none" class="navbar-btn navbar-btn-back"  data-rel="back">返回</a></li>
+            </ul>
+        </div>
+    </div>
+    <!--/header-->
+    
+    <!--content-->
+    <div role="main">
+    
+    	<!--addr-panel-->
+    	<div class="addr-panel icon-addr-local">
+        	<div class="name">收货人&nbsp;&nbsp;： <span>阿里山</span></div>
+            <div class="mobile">1511 000 4020</div>
+            <div class="addr">收货地址: <span>北京北京市海淀区苏州街3号大河庄苑3号楼6单元</span></div>
+            <a href="#" class="detail">更改收货地址</a>
+        </div>
+        <!--/addr-panel-->
+        
+        <!--goods-order-list-->
+        <div class="white-pannel margin-top-10px padding-left-10px">
+        
+        	<div class="goods-order-list">
+                <div class="shop-title"><h2>韩都衣舍</h2><div class="icon-more-drop"></div></div>
+                
+                <!--item-->
+                <div class="item">
+                	<!--goods-order-item-->
+                	<div class="goods-order-item border-bottom-dashed">
+                        <div class="cart-item">
+                            <div class="image"><img src="image/thumb-nail.jpg"></div>
+                            <div class="title">【正品保证】2014秋冬装时尚新款 甜美学院风格子翻领夹棉加厚版学院风</div>
+                            <div class="sub-title ">颜色 格子红  尺寸L(165/84)</div>
+                        </div>
+                        <ul class="price-info">
+                        	<li>¥ 159.0</li>
+                            <li>x 1</li>
+                        </ul>
+                    </div>
+                    <!--/goods-order-item-->
+                    
+                    <ul class="goods-order-item-price-info">
+                    	<li>实付款：<span class="price">￥99.0</span></li>
+                        <li>数量：<span>x 1</span></span></li>
+                    </ul>
+                    
+                </div>
+                <!--/item-->
+                
+                <!--package-control-->
+                <ul class="package-control">
+                	<li>
+                    	<span class="title">配送方式</span>
+                        <span class="info">默认快递<span class="money">￥0.0</span></span>
+                        <a href="#" class="detail">选择配送方式</a>
+                    </li>
+                    <li>
+                    	<span class="title">运费险</span>
+                        <span class="info">卖家已为您运费投保，最高赔付25.00元<span class="money">￥0.0</span></span>
+                        <a href="#" class="detail">选择运费险</a>
+                    </li>
+                    <li>
+                    	<span class="title">给卖家留言</span>
+                        <span class="info"><div class="chat-icon"></div></span>
+                        <a href="#" class="detail">给卖家留言</a>
+                    </li>
+                </ul>
+                <!--/package-control-->
+                <div class="total">共 1 件商品<span class="price">合计: ￥99.0</span></div>
+            </div>
+            
+        </div>
+        <!--/goods-order-list-->
+        
+        <!--sale info-->
+        <ul class="white-pannel list-style list-with-title"><h2>优惠抵扣</h2>
+        	<li>
+            	<span class="title">使用积分</span>
+                <span class="info">暂无可用积分<span class="money">￥0.0</span></span>
+                <a href="#" class="detail">选择积分抵扣</a>
+            </li>
+            <li>
+            	<span class="title">使用红包</span>
+                <span class="info">满50减5元<span class="money color-red">￥5.0</span></span>
+                <a href="#" class="detail">选择红包抵扣</a>
+            </li>
+        </ul>
+        <!--/sale info-->
+        
+        <!--pay info-->
+        <ul class="white-pannel list-style list-with-title with-round-icon"><h2>支付方式</h2>
+        	<li class="pay-icon-alipay">
+            	<span class="title">支付宝 网页版</span>
+                <span class="radio-control"><input type="radio" name="pay"  class="regular-radio" data-role="none" value="alipay" id="alipay" checked><label for="alipay"></label></span>
+            </li>
+            <li class="pay-icon-wechat">
+            	<span class="title">微信支付</span>
+                <span class="radio-control"><input type="radio" name="pay"  class="regular-radio" data-role="none" value="wechat" id="wechat"><label for="wechat"></label></span>
+            </li>
+            <li class="pay-icon-card">
+            	<span class="title">银行卡支付</span>
+                <span class="radio-control"><input type="radio" name="pay"  class="regular-radio" data-role="none" value="card" id="card"><label for="card"></label></span>
+            </li>
+        </ul>
+        <!--/sale info-->
+        
+        <br><br>
+    </div>
+    <!--/content-->
+    
+    <div data-role="footer" data-position="fixed" data-id="footer-buy" data-tap-toggle="false">
+    	<ul class="footer-pay">
+        	<li class="colum-one">
+            	<span class="pay-fee">应支付: <span>￥94.0</span></span>
+                <span class="post-fee">不含运费</span>
+            </li>
+            <li class="right-button"><button class="btn-buy" data-role="none"><span>确认订单</span></button></li>
+        </ul>
+    </div>
+    
+    
+</div>
+
+</body>
+</html>
