@@ -65,14 +65,12 @@ function getChosedValue(){
 	color = "";
 	size = "";
 	$(".color > li > .ui-radio > label").click(function(){
-		alert("can you see?");
 		color = $(this).next("input").val();
 		chosedValue= color + "/" + size;
 		$(".chose-info").html("已选择");
 		$(".chosed").html(chosedValue);
 	});
 	$(".size > li > .ui-radio > label").click(function(){
-		alert("can you see?");
 		size = $(this).next("input").val();
 		chosedValue= color + "/" + size;
 		$(".chose-info").html("已选择");
