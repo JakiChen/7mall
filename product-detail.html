@@ -153,7 +153,7 @@
 	<div data-role="header">
     	<div class="nav-bar">
         	<ul class="navbar-content">
-            	<h1>立即购买</h1>
+            	<h1 class="pro-info-tile">立即购买</h1>
                 <li class="left-first"><a href="#" data-role="none" class="navbar-btn navbar-btn-back" data-rel="back">返回</a></li>
                 <li class="right-first"><a href="#" data-role="none" class="navbar-btn navbar-btn-more">更多</a></li>
             </ul>
@@ -172,17 +172,17 @@
             <div class="chose-ctrl-container">
                 <ul class="chose-ctrl size" id="size">
                     <h2>尺寸</h2>
-                    <li><label><input type="radio" name="size" value="S (165/78A)">S (165/78A)</label></li>
-                    <li><label><input type="radio" name="size" value="M (170/82A))">M (170/82A)</label></li>
-                    <li><label><input type="radio" name="size" value="L (175/86A)">L (175/86A)</label></li>
-                    <li><label><input type="radio" name="size" value="XL (180/92A)">XL (180/92A)</label></li>
+                    <li><label for="S (165/78A)">S (165/78A)</label><input data-role="none" type="radio" name="size" value="S (165/78A)" id="S (165/78A)"></li>
+                    <li><label for="M (170/82A)">M (170/82A)</label><input data-role="none" type="radio" name="size" value="M (170/82A)" id="M (170/82A)"></li>
+                    <li><label for="L (175/86A)">L (175/86A)</label><input data-role="none" type="radio" name="size" value="L (175/86A)" id="L (175/86A)"></li>
+                    <li><label for="XL (180/92A)">XL (180/92A)</label><input data-role="none" type="radio" name="size" value="XL (180/92A)" id="XL (180/92A)"></li>
                 </ul>
                 
                 <ul class="chose-ctrl color">
                     <h2>颜色</h2>
-                    <li><label><input type="radio" name="color" value="黑色)">黑色</label></li>
-                    <li><label><input type="radio" name="color" value="红色">红色</label></li>
-                    <li><label><input type="radio" name="color" value="军绿">军绿</label></li>
+                    <li><label for="黑色">黑色</label><input data-role="none" type="radio" name="color" value="黑色" id="黑色"></li>
+                    <li><label for="红色">红色</label><input data-role="none" type="radio" name="color" value="红色" id="红色"></li>
+                    <li><label for="军绿">军绿</label><input data-role="none" type="radio" name="color" value="军绿" id="军绿"></li>
                 </ul>
             </div>
             <div class="number-control">
@@ -194,15 +194,14 @@
                 </div>
                 <div class="left-number">库存<span class="number">3</span></div>
             </div>
-            
         </div>
     </div>
     <!--/content-->
     
     <div data-role="footer" data-position="fixed" data-id="footer-buy" data-tap-toggle="false">
-    	<ul class="footer-buy">
+    	<ul class="footer-buy" id="auto-footer">
         	<li><button data-role="none" id="btnAddToCart" class="btn-buy btn-cart-color"><span class="icon-cart">加入购物车</span></button></li>
-            <li><button data-role="none" id="btnPayIt" class="btn-buy" ><span>立即购买</span></button></li>
+            <li><button data-role="none" id="btnPayIt" class="btn-buy"><span>立即购买</span></button></li>
         </ul>
     </div>
   

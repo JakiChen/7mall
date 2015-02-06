@@ -64,13 +64,17 @@ function getChosedValue(){
 	chosedValue = "";
 	color = "";
 	size = "";
-	$(".color > li > .ui-radio > label").click(function(){
+	$(".color > li > label").click(function(){
+		$(".color > li > label").removeClass("radio-on");
+		$(this).addClass("radio-on");
 		color = $(this).next("input").val();
 		chosedValue= color + "/" + size;
 		$(".chose-info").html("已选择");
 		$(".chosed").html(chosedValue);
 	});
-	$(".size > li > .ui-radio > label").click(function(){
+	$(".size > li > label").click(function(){
+		$(".size > li > label").removeClass("radio-on");
+		$(this).addClass("radio-on");
 		size = $(this).next("input").val();
 		chosedValue= color + "/" + size;
 		$(".chose-info").html("已选择");
@@ -80,10 +84,12 @@ function getChosedValue(){
 	$("#btnAddToCart").click(function(){
 		checkChosedValue( 'btnAddCart' );
 	});
+
 	//立即购买
 	$("#btnPayIt").click(function(){
 		checkChosedValue( 'btnPayIt' );
 	});
+
 	//获取库存数量
 	goodsNumber = 1; //购买商品数
 	maxNumber = 3; //这个是库存数
@@ -102,6 +108,7 @@ function getChosedValue(){
 		$("#total").val(goodsNumber);
 	});
 }
+
 /* 开始 */
 $(document).ready(function () {
 	
@@ -137,7 +144,6 @@ $(document).ready(function () {
 	//未使用
 	function onComplete(data) { 
 	}
-	
 });
 $(document).on("pageinit","#pro-info-detail-chose-page",function(){
 	//详情页form 联动
