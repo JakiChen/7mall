@@ -15,10 +15,12 @@
     <meta name="copyright" content="">
     
     <meta name="viewport" content="width=320,maximum-scale=1.3,user-scalable=no,minimal-ui">
-    <title>我</title>
+    <title></title>
     
     <script type="text/javascript" src="js/jquery-2.1.1.js"></script>
 	<script type="text/javascript" src="js/jquery.mobile-1.4.4.js"></script>
+    <script type="text/javascript" src="js/jquery.grid-a-licious.min.js"></script>
+    <script type="text/javascript" src="js/app.init.js"></script>
 
 	<link href="css/jquery.mobile-1.4.4.css" rel="stylesheet" type="text/css">
 	<link href="css/over.write.css" rel="stylesheet" type="text/css">
@@ -150,7 +152,7 @@
             </li>
              <li class="me-icon-coin">
             	<span class="title">金币</span>
-                <a rel="external" class="detail" href="my-coion.html">我的金币</a>
+                <a rel="external" class="detail" href="my-coin.html">我的金币</a>
             </li>
         </ul>
 		<!--/quick-menu item-two-->
@@ -170,10 +172,20 @@
     <!--footer-->
     <div data-role="footer" data-position="fixed" data-id="footer" data-tap-toggle="false">
     	<ul class="tab-bar">
-        	<li><a data-role="none" rel="external" href="index.html" class="tabbar-icon-home">首页</a><span class="tip-message"></span></li>
-            <li><a data-role="none" rel="external" href="discovery.html" class="tabbar-icon-discovery">发现</a><span class="tip-message"></span></li>
-            <li><a href="#pub" class="tabbar-btn-pub">发布</a></li>
-            <li><a data-role="none" rel="external" href="message.html" class="tabbar-icon-message">消息</a><span class="tip-message"></span></li>
+        	<li><a data-role="none" rel="external" href="index.html" class="tabbar-icon-home">首页</a></li>
+            <li><a data-role="none" rel="external" href="discovery.html" class="tabbar-icon-discovery">发现</a></li>
+            <li>
+            	<a href="#pub" class="tabbar-btn-pub" id="btn-quik-pub">发布</a>
+                <div class="quick-menu-mask">
+                    <ul class="main-quick-menu">
+                        <li><a rel="external" href="#" class="pub-icon-scan">扫一扫</a></li>
+                        <li><a rel="external" href="#" class="pub-icon-pub">晒单</a></li>
+                        <li><a rel="external" href="#" class="pub-icon-create">创建专辑</a></li>
+                        <li><a rel="external" href="#" class="pub-icon-link">链接</a></li>
+                    </ul>
+                </div>
+            </li>
+            <li><a data-role="none" rel="external" href="message.html" class="tabbar-icon-message">消息</a></li>
             <li class="index"><a data-role="none" rel="external" href="me.html" class="tabbar-icon-me">我</a><span class="tip-message toast"></span></li>
         </ul>
    	</div>

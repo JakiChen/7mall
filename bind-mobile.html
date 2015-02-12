@@ -15,7 +15,7 @@
     <meta name="copyright" content="">
     
     <meta name="viewport" content="width=320,maximum-scale=1.3,user-scalable=no,minimal-ui">
-    <title>编辑资料</title>
+    <title>修改手机号</title>
     
     <script type="text/javascript" src="js/jquery-2.1.1.js"></script>
 	<script type="text/javascript" src="js/jquery.mobile-1.4.4.js"></script>
@@ -36,7 +36,7 @@
 	<div data-role="header">
     	<div class="nav-bar">
         	<ul class="navbar-content">
-            	<h1>编辑资料</h1>
+            	<h1>修改手机号</h1>
                 <li class="left-first"><a href="#" data-role="none" class="navbar-btn navbar-btn-back" data-rel="back">返回</a></li>
             </ul>
         </div>
@@ -45,40 +45,22 @@
     
     <!--content-->
     <div role="main">
-    	
-        
-        <div class="upload-avantar">
-        	<div class="img-container"><img src="image/avantar-bg.jpg" id="pic"></div>
-            <input type="file" name="file" id="file" onchange="change('pic','file')" data-role="none"><label for="file" ></label><label for="file" class="camera"></label>
-        </div>
-        
+
 		<!--basic info-->
-        <ul class="white-pannel list-style list-with-title"><h2>基本信息</h2>
+        <ul class="white-pannel list-style margin-top-10px">
             <li>
-                <span class="title-gray">用户名</span>
-                <span class="content"><input data-role="none" type="text" name="name" placeholder="用户名" value="Jaki Chen"></span>
+                <span class="title-gray">绑定号码</span>
+                <span class="content"><input data-role="none" type="tel" name="mobile" placeholder="手机号"></span>
             </li>
-            <li>
-                <span class="title-gray">姓名</span>
-                <span class="content"><input data-role="none" type="text" name="province" placeholder="真实姓名"></span>
-            </li>
-            <li>
-                <span class="title-gray">联系方式</span>
-                <span class="content"><input data-role="none" type="tel" name="mobile" placeholder="手机号" value="1511 000 4020"></span>
+             <li>
+                <span class="title-gray">验证码</span>
+                <span class="content"><input data-role="none" type="tel" name="mobile" placeholder="验证码"></span>
+                <button class="btn-border-style" data-role="none"><span>获取验证码</span></button>
             </li>
         </ul>
         <!--/basic info-->
         
-        <!--basic info-->
-        <ul class="white-pannel list-style list-with-title"><h2>个性签名</h2>
-            <li>
-                <span class="title-gray">个性签名</span>
-                <span class="content"><input data-role="none" type="text" name="name" placeholder="个性签名，介绍自己"></span>
-            </li>
-        </ul>
-        <!--/basic info-->
-        
-        <div class="paading-10px-container"><input type="submit" data-role="none" class="btn-normal" value="保存修改"></div>
+        <div class="paading-10px-container"><input type="submit" data-role="none" class="btn-normal disabled" value="确认修改"></div>
         
     </div>
     <!--/content-->
