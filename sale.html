@@ -19,6 +19,7 @@
     
     <script type="text/javascript" src="js/jquery-2.1.1.js"></script>
 	<script type="text/javascript" src="js/jquery.mobile-1.4.4.js"></script>
+    <script type="text/javascript" src="js/jquery.grid-a-licious.min.js"></script>
     <script type="text/javascript" src="js/app.init.js"></script>
 
 	<link href="css/jquery.mobile-1.4.4.css" rel="stylesheet" type="text/css">
@@ -33,7 +34,7 @@
 <div data-role="page" class="gray-bg">
 
 	<!--header-->
-	<div data-role="header">
+	<div data-role="header" class="z-index-800" id="header">
     	<div class="nav-bar">
         	<ul class="navbar-content">
             	<h1>特卖惠</h1>
@@ -45,6 +46,54 @@
     
     <!--content-->
     <div role="main">
+		<ul class="tab-control coloum-four more" id="fixed-tab" >
+            <li><a href="#" class="current">全部</a></li>
+            <li><a href="#">秋冬新品</a></li>
+            <li><a href="#">毛呢大衣</a></li>
+            <li><a href="#">长袖衬衫</a></li>
+            <li class="more"><a rel="external" href="#" class="category-icon-more" id="btn-category-more">更多</a></li>
+            <li class="more-menu" id="btn-category-more-menu">
+                <div class="category-menu-mask"></div>
+                <ul class="category-menu">
+                    <h2><a rel="external" href="#">切换类目</a></h2>
+                    <li><a rel="external" href="#">全部</a></li>
+                    <li><a rel="external" href="#" class="current">秋冬新品秋冬新品秋冬新品</a></li>
+                    <li><a rel="external" href="#">毛呢大衣</a></li>
+                    <li><a rel="external" href="#">长袖衬衫</a></li>
+                    <li><a rel="external" href="#">英伦大衣</a></li>
+                    <li><a rel="external" href="#">毛衫</a></li>
+                    <li><a rel="external" href="#">夹克</a></li>
+                    <li><a rel="external" href="#">卫衣</a></li>
+                    <li><a rel="external" href="#">牛仔裤</a></li>
+                    <li><a rel="external" href="#">休闲裤</a></li>
+                    <li><a rel="external" href="#">西装</a></li>
+                </ul>
+            </li>
+        </ul>
+
+    
+    	<ul class="sale-items">
+        	<li class="item">
+            	<div class="pic-container">
+                	<a rel="external" href="#" class="link">【包邮】2014秋冬装时尚新款 甜美学院风格子翻领夹棉加厚宽松版毛呢外套</a>
+                    <img src="image/products-detail.jpg">
+                </div>
+                <p class="pro-title"><a href="#">【包邮】2014秋冬装时尚新款 甜美学院风格子翻领夹棉加厚宽松版毛呢外套</a></p>
+                <div class="price">¥<span class="color-red">95.0</span>原价<span class="price-old">129.0</span> <span class="sale-info">7.7折</span></div>
+                <div class="pro-left-info"><span class="left">还剩4天7小时0分</span><span class="total-view">13167人在逛</span></div>
+            </li>
+            
+            <li class="item">
+            	<div class="pic-container">
+                	<a rel="external" href="#" class="link">【包邮】2014秋冬装时尚新款 甜美学院风格子翻领夹棉加厚宽松版毛呢外套</a>
+                    <img src="image/products-detail.jpg">
+                </div>
+                <p class="pro-title"><a href="#">【包邮】2014秋冬装时尚新款 甜美学院风格子翻领夹棉加厚宽松版毛呢外套</a></p>
+                <div class="price">¥<span class="color-red">95.0</span>原价<span class="price-old">129.0</span> <span class="sale-info">7.7折</span></div>
+                <div class="pro-left-info"><span class="left">还剩4天7小时0分</span><span class="total-view">13167人在逛</span></div>
+            </li>
+        </ul>
+ 
     </div>
     <!--/content-->
     

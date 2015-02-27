@@ -142,7 +142,29 @@ function showQuickMenu(){
 		$(this).toggleClass("my-rotage");
 	});
 }
-
+/* 二级分类 显示二级分类 */
+function showSubCategory(){
+	$("#btn-category-more").click(function(){
+		$("#btn-category-more-menu").toggleClass("show");
+		$(this).toggleClass("more-up");
+	});
+}
+/* 固定TAB 控件 */
+function fixedTabShow(){
+	var nav=document.getElementById('header');
+	var navFixed=document.getElementById('fixed-tab');
+	window.onscroll=function(){
+		var scrollTop=document.documentElement.scrollTop||document.body.scrollTop;
+		if( scrollTop > nav.offsetTop ){
+			navFixed.style.position = "fixed";
+			navFixed.style.width = "100%";
+			navFixed.style.zIndex = "1000";
+			navFixed.style.top = "0";
+		}else if( scrollTop <= nav.offsetTop ){
+			navFixed.style.position = "static";
+		}
+	}
+}
 /* 开始 */
 $(document).ready(function () {
 	
@@ -179,8 +201,14 @@ $(document).ready(function () {
 	function onComplete(data) { 
 	}
 	
-	//显示快速导航
+	//切换显示快速导航
 	showQuickMenu();
+	
+	//切换显示二级分类
+	showSubCategory();
+	
+	//固定Tab栏
+	fixedTabShow();
 });
 
 $(document).on("pageinit","#pro-info-detail-chose-page",function(){
