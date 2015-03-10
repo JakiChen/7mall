@@ -19,6 +19,7 @@
     
     <script type="text/javascript" src="js/jquery-2.1.1.js"></script>
 	<script type="text/javascript" src="js/jquery.mobile-1.4.4.js"></script>
+    <script type="text/javascript" src="js/jquery.grid-a-licious.min.js"></script>
     <script type="text/javascript" src="js/app.init.js"></script>
 
 	<link href="css/jquery.mobile-1.4.4.css" rel="stylesheet" type="text/css">
@@ -33,7 +34,7 @@
 <div data-role="page" class="gray-bg">
 
 	<!--header-->
-	<div data-role="header">
+	<div data-role="header" id="header">
     	<div class="nav-bar">
         	<ul class="navbar-content">
             	<h1>邀请好友</h1>
@@ -45,7 +46,7 @@
     
     <!--content-->
     <div role="main">
-   		<ul class="tab-control coloum-three-style2">
+   		<ul class="tab-control coloum-three-style2" id="fixed-tab">
             <li><a rel="external" href="invite-friend.html">微信</a></li>
             <li><a rel="external" href="invite-friend-weibo.html" class="current">新浪微博</a></li>
             <li><a rel="external" href="invite-friend-contact.html">通讯录</a></li>

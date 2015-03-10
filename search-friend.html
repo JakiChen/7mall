@@ -15,7 +15,7 @@
     <meta name="copyright" content="">
     
     <meta name="viewport" content="width=320,maximum-scale=1.3,user-scalable=no,minimal-ui">
-    <title>邀请好友</title>
+    <title>查找好友</title>
     
     <script type="text/javascript" src="js/jquery-2.1.1.js"></script>
 	<script type="text/javascript" src="js/jquery.mobile-1.4.4.js"></script>
@@ -37,7 +37,7 @@
 	<div data-role="header" id="header">
     	<div class="nav-bar">
         	<ul class="navbar-content">
-            	<h1>邀请好友</h1>
+            	<h1>查找好友</h1>
                 <li class="left-first"><a href="#" data-role="none" class="navbar-btn navbar-btn-back" data-rel="back">返回</a></li>
             </ul>
         </div>
@@ -46,13 +46,16 @@
     
     <!--content-->
     <div role="main">
-   		<ul class="tab-control coloum-three-style2" id="fixed-tab">
-            <li><a rel="external" href="invite-friend.html">微信</a></li>
+   		<ul class="tab-control coloum-four" id="fixed-tab">
+            <li><a rel="external" href="invite-friend.html" class="current">推荐</a></li>
             <li><a rel="external" href="invite-friend-weibo.html">新浪微博</a></li>
-            <li><a rel="external" href="invite-friend-contact.html" class="current">通讯录</a></li>
+            <li><a rel="external" href="invite-friend-wechat.html">微信</a></li>
+            <li><a rel="external" href="invite-friend-contact.html">通讯录</a></li>
         </ul>
         
+        <!--white-pannel-one-->
         <div class="white-pannel">
+        	<div class="friend-title"><h2 class="daren-icon-famale">女装达人</h2><a rel="external" href="#" class="detail special-detail">更多</a></div>
         	<ul class="friend-item">
                 <li class="advantar-item-container">
                     <div class="advantar">
@@ -93,6 +96,14 @@
                         <a rel="external" class="btn-invite" href="#">邀请</a>
                     </div>
                 </li>
+            </ul>
+        </div>
+        <!--/white-pannel-one-->
+        
+        <!--white-pannel-two-->
+        <div class="white-pannel">
+        	<div class="friend-title"><h2 class="daren-icon-beauty">美装达人</h2><a rel="external" href="#" class="detail special-detail">更多</a></div>
+        	<ul class="friend-item">
                 <li class="advantar-item-container">
                     <div class="advantar">
                         <img src="image/avantar.jpg">
@@ -103,7 +114,7 @@
                         <span class="sub-title">无签名~</span>
                     </div>
                     <div class="right-action-container">
-                        <a rel="external" class="btn-invite" href="#">邀请</a>
+                        <a rel="external" class="btn-follow-small" href="#">添加关注</a>
                     </div>
                 </li>
                 <li class="advantar-item-container">
@@ -116,7 +127,7 @@
                         <span class="sub-title">无签名~</span>
                     </div>
                     <div class="right-action-container">
-                        <a rel="external" class="btn-follow-small" href="#">添加关注</a>
+                        <a rel="external" class="btn-invite" href="#">邀请</a>
                     </div>
                 </li>
                 <li class="advantar-item-container">
@@ -132,21 +143,10 @@
                         <a rel="external" class="btn-invite" href="#">邀请</a>
                     </div>
                 </li>
-                <li class="advantar-item-container">
-                    <div class="advantar">
-                        <img src="image/avantar.jpg">
-                        <a rel="external" href="personal-profile.html">千美衣派</a>
-                    </div>
-                    <div class="content">
-                        <span class="name">千美衣派</span>
-                        <span class="sub-title">无签名~</span>
-                    </div>
-                    <div class="right-action-container">
-                        <a rel="external" class="btn-follow-small" href="#">添加关注</a>
-                    </div>
-                </li>
             </ul>
         </div>
+        <!--/white-pannel-two-->
+        
     </div>
     <!--/content-->
     
