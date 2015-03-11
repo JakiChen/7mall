@@ -1332,6 +1332,32 @@ input{
 	border-bottom:solid 1px #d8d8d8;
 	position:relative;
 }
+.list-style li input{
+	width:100%;
+	height:auto;
+	border:none;
+	font-size:1.142rem;
+}
+.list-style li .bind{
+	position:absolute;
+	right:10px;
+	top:50%;
+	margin-top:-15px;
+	height:30px;
+	display:block;
+	line-height:30px;
+	text-decoration:none;
+	color:#686868;
+	font-size:.857rem;
+	padding-right:35px;
+}
+.list-style li .bind:before{
+	position:absolute;
+	right:0;
+	left:auto;
+	top:50%;
+	margin-top:-15px;
+}
 .list-style .tip-message{
 	height:22px;
 	line-height:22px;
@@ -1390,11 +1416,27 @@ input{
 	line-height:16px;
 	z-index:100;
 }
+.list-style li .money-info{
+	font-size:0.857rem;
+	position:absolute;
+	top:5px;
+	right:10px;
+	text-align:right;
+	color:#686868;
+	line-height:16px;
+	z-index:100;
+}
 .list-style .info .money{
 	display:block;
 }
 .list-style .info .color-red{
 	color:#ff4242;
+}
+.accout-info{
+	color:#a3a3a3;
+	padding-left:10px;
+	display:block;
+	margin-bottom:40px;
 }
 .radio-control{
 	position:absolute;
@@ -1787,7 +1829,7 @@ input{
 	position:absolute;
 	left:0;
 	top:0;
-	text-indent:-999px;
+	text-indent:-9999px;
 	z-index:500;
 }
 .guide-banner-container{
@@ -2843,11 +2885,78 @@ input{
 	vertical-align:middle;
 	z-index:100;
 }
-
-
-
-
-
+/* Ctrl Share */
+.ctrl-share{
+	width:300px;
+	padding:10px;
+	position:fixed;
+	bottom:66px;
+	left:50%;
+	margin-left:-160px;
+	z-index:5000;
+}
+.ctrl-share li {
+	width:25%;
+	float:left;
+	text-align:center;
+}
+.ctrl-share li a{
+	color:#8e8e8e;
+	text-decoration:none;
+	font-size:.857rem;
+	display:block;
+}
+.ctrl-share li a:before{
+	content:"";
+	width:50px;
+	height:50px;
+	display:block;
+	margin:0 auto;
+	background-color:#fff;
+	border-radius:14.5px;
+	-webkit-border-radius:14.5px;
+	-ms-border-radius:14.5px;
+	-moz-border-radius:14.5px;
+	-o-border-radius:14.5px;
+	margin-bottom:8px;
+}
+.share-icon-close{
+	height:42px;
+	width:42px;
+	border-radius:50%;
+	-webkit-border-radius:50%;
+	-ms-border-radius:50%;
+	-moz-border-radius:50%;
+	-o-border-radius:50%;
+	border:solid 1px #fff;
+	display:block;
+	position:fixed;
+	bottom:10px;
+	left:50%;
+	z-index:5000;
+	margin-left:-21px;
+	text-indent:-9999px;
+	overflow:hidden;
+}
+.share-menu-mask{
+	height:100%;
+	width:100%;
+	position:fixed;
+	left:0;
+	top:0;
+	z-index:1000;
+	background-color: rgba(232, 232, 232, 0.459);
+}
+.blur{
+	filter:blur(40px);
+	-webkit-filter:blur(40px);
+	-ms-filter:blur(40px);
+	-moz-filter:blur(40px);
+	-o-filter:blur(40px);
+}
+.share-control-container{
+	display:none;
+}
 /* Animate */
 @keyframes bounceIn {
 	0%, 20%, 40%, 60%, 80%, 100% {

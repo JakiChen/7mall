@@ -165,6 +165,17 @@ function fixedTabShow(){
 		}
 	}
 }
+/* 显示分享控件 */
+function showShareCtrl(){
+	$("#btnShare").click(function(){
+		$(".share-control-container").css("display","block");
+		$(".page").addClass("blur");
+	});
+	$("#btnShareClose").click(function(){
+		$(".share-control-container").css("display","none");
+		$(".page").removeClass("blur");
+	});
+}
 /* 开始 */
 $(document).ready(function () {
 	
@@ -209,6 +220,9 @@ $(document).ready(function () {
 	
 	//固定Tab栏
 	fixedTabShow();
+	
+	//显示分享控件
+	showShareCtrl();
 });
 
 $(document).on("pageinit","#pro-info-detail-chose-page",function(){

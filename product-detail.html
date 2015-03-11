@@ -31,7 +31,7 @@
 <body>
 
 <!--pro-info-detail-page-->
-<div data-role="page" class="gray-bg" id="pro-info-detail-page">
+<div data-role="page" class="gray-bg page" id="pro-info-detail-page">
 
 	<!--header-->
 	<div data-role="header">
@@ -40,7 +40,7 @@
             	<h1>宝贝详情</h1>
                 <li class="left-first"><a href="#" data-role="none" class="navbar-btn navbar-btn-back" data-rel="back">返回</a></li>
                 <li class="right-first"><a href="#" data-role="none" class="navbar-btn navbar-btn-more">更多</a></li>
-                <li class="right-second"><a href="#" data-role="none" class="navbar-btn navbar-btn-share">分享</a></li>
+                <li class="right-second"><a href="#" data-role="none" class="navbar-btn navbar-btn-share" id="btnShare">分享</a></li>
             </ul>
         </div>
     </div>
@@ -147,7 +147,7 @@
 
 
 <!--pro-info-detail-chose-page-->
-<div data-role="page" class="gray-bg" id="pro-info-detail-chose-page">
+<div data-role="page" class="gray-bg" id="pro-info-detail-chose-page" class="page">
 	<div class="my-alert-message-box"></div>
 	<!--header-->
 	<div data-role="header">
@@ -207,6 +207,20 @@
   
 </div>
 <!--/pro-info-detail-chose-page-->
+
+<!--share-control-container-->
+<div class="share-control-container">
+	<div class="share-menu-mask">
+    </div>
+	<ul class="ctrl-share">
+    	<li><a rel="external" class="share-icon-wechat" href="#">微信</a></li>
+        <li><a rel="external" class="share-icon-wechat-circle" href="#">微信朋友圈</a></li>
+        <li><a rel="external" class="share-icon-weibo" href="#">微博</a></li>
+        <li><a rel="external" class="share-icon-copy" href="#">复制链接</a></li>
+    </ul>
+    <a rel="external" href="#" class="share-icon-close" id="btnShareClose">关闭</a>
+</div>
+<!--/share-control-container-->
 
 </body>
 </html>
